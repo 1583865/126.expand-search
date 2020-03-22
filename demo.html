@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./demo.css">
+</head>
+<body>
+
+<div class="middle">
+	<from class="search-box" action="index.html" method="post">
+		<input type="text" class="input" name="" value="">
+		<button type="button" class="btn" name="button"></button>
+	</from>
+</div>
+
+
+
+<script type="text/javascript" src="./jquery.min.js"></script>
+
+<script type="text/javascript">
+	
+	$(".btn").on("click",function(){
+		// 给.btn单击事件
+		$(".input").toggleClass('inclicked');
+		// 给input移除inclicked
+		$(".btn").toggleClass('close');
+		// 给btn移除close
+	})
+</script>
+	
+	
+</body>
+</html>
